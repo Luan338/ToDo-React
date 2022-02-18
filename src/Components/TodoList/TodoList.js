@@ -2,15 +2,21 @@ import React from 'react';
 import Todo from './Todo';
 import '../../App.css';
 
-const TodoList = ({todos}) => {
-  console.log(todos)
+const TodoList = ({todos, setTodos}) => {
+
   return (
         <ul className='boxList'>
           {todos.map((todo) =>(
-             <Todo text={todo.text}/>
+             <Todo 
+             key={todo.id} 
+             text={todo.text}
+             setTodos={setTodos}
+             todos={todos}
+             todo={todo}
+             />
           ))}
         </ul>
   )
 }
 
-export default TodoList
+export default TodoList;

@@ -4,7 +4,6 @@ import * as S from './styles';
 const Form = ({setInput, todos, setTodos, input}) => {
 
     const textInput = ({target}) =>{
-        console.log(target.value)
         setInput(target.value);
     }
 
@@ -12,7 +11,7 @@ const Form = ({setInput, todos, setTodos, input}) => {
         e.preventDefault();
         setTodos([
             ...todos,
-            {text: input, id:Math.random() * 9999}
+            {text: input, id:Math.floor(Math.random() * (20000 - 999))}
         ]);
         setInput("")
     };
