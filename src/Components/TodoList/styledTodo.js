@@ -38,10 +38,9 @@ export const Box = styled.div`
     justify-content: space-around;
     width: 100%;
     height: 12rem;
-
 `
 export const Paragraph = styled.p`
-    font-size: 1.2rem;
+    font-size: 1em;
     color: #e1ebfd;
     text-shadow: 0 0 5px #433aa8, 3px -1px 5px #271c6c;
 `

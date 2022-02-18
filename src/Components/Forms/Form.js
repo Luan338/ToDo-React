@@ -9,11 +9,14 @@ const Form = ({setInput, todos, setTodos, input}) => {
 
     const submit = (e) => {
         e.preventDefault();
+
+        if(input.length){
         setTodos([
             ...todos,
             {text: input, id:Math.floor(Math.random() * (2000 - 999))}
         ]);
         setInput("")
+    }  
     };
 
   return (
