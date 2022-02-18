@@ -11,10 +11,12 @@ const Todo = ({text, todo, todos, setTodos}) => {
   return (
     <>
         <S.List>
-          <S.Title>Tarefa</S.Title>
+          <S.BoxInitial>
+            <S.Title>Tarefa</S.Title>
+            <S.Img onClick={handleDelete} src={lixeira} alt="Lixeira" />
+          </S.BoxInitial>
           <S.Box>
             <S.Paragraph>{text}</S.Paragraph>
-            <S.Img onClick={handleDelete} src={lixeira} alt="Lixeira" />
           </S.Box>
         </S.List>
     </>

@@ -22,6 +22,9 @@ export const Input = styled.input`
     @media(max-width: 340px){
         margin-right: 0rem;
     }
+    @media(max-width: 273px){
+        width: 100%;
+    }
 `
 
 export const Button = styled.button`

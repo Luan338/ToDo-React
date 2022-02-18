@@ -11,7 +11,7 @@ const Form = ({setInput, todos, setTodos, input}) => {
         e.preventDefault();
         setTodos([
             ...todos,
-            {text: input, id:Math.floor(Math.random() * (20000 - 999))}
+            {text: input, id:Math.floor(Math.random() * (2000 - 999))}
         ]);
         setInput("")
     };

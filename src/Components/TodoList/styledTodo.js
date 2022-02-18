@@ -2,16 +2,28 @@ import styled from "styled-components";
 
 
 export const List = styled.li`  
-    margin-top: 2rem;
+    cursor: pointer;    
+    margin: 4rem;
     list-style: none;
-    border: 2px solid #271c6c;
-    box-shadow: 0 0 0 3px #6a6aab;
+    border: 1px solid rgba(39, 28, 108, .2);
+    box-shadow: 0 0 20px 3px #6a6aab;
     border-radius: 10px;
-    width: 20rem;
-    height: 15rem;
-    @media(max-width: 360px){
+    height: 20rem;
+`
+
+export const BoxInitial = styled.div`
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    }
+
+`
+export const Title = styled.h1`
+    font-size: 1.2em;
+    text-align: center;
+    color: #271c6c;
+    text-shadow: 0 0 5px #e1ebfd, 3px -1px 5px #e1ebfd;
 `
 
 export const Img = styled.img`
@@ -28,16 +40,6 @@ export const Box = styled.div`
     height: 12rem;
 
 `
-
-export const Title = styled.h1`
-    font-size: 1.2em;
-    text-align: center;
-    color: #271c6c;
-    text-shadow: 0 0 5px #e1ebfd, 3px -1px 5px #e1ebfd;
-    width: 90%;
-    margin: auto;
-`
-
 export const Paragraph = styled.p`
     font-size: 1.2rem;
     color: #e1ebfd;
