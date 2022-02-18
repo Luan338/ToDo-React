@@ -16,7 +16,9 @@ const Form = ({setInput, todos, setTodos, input}) => {
             {text: input, id:Math.floor(Math.random() * (2000 - 999))}
         ]);
         setInput("")
-    }  
+    }else{
+        alert("Informe uma tarefa !");
+    }
     };
 
   return (
