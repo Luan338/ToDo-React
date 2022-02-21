@@ -40,7 +40,8 @@ export const Box = styled.div`
     height: 12rem;
 `
 export const Paragraph = styled.p`
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     word-wrap: break-word;
     font-size: 1em;
     color: #e1ebfd;
