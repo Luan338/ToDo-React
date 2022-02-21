@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './styledTodo';
 import lixeira from './Img/lixeira.png';
 
-const Todo = ({text, todo, todos, setTodos, input}) => {
+const Todo = ({text, todo, todos, setTodos}) => {
 
   const handleDelete = () =>{
     setTodos(todos.filter((element) => element.id !== todo.id ))
