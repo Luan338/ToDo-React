@@ -2,10 +2,10 @@ import React from 'react';
 import * as S from './styledTodo';
 import lixeira from './Img/lixeira.png';
 
-const Todo = ({text, todo, todos, setTodos}) => {
+const Todo = ({text, todo, todos, setTodos, inputTime}) => {
 
   const handleDelete = () =>{
-    setTodos(todos.filter((element) => element.id !== todo.id ))
+    setTodos(todos.filter((e) => e.id !== todo.id ))
   }
 
   return (
@@ -17,6 +17,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
           </S.BoxInitial>
           <S.Box>
             <S.Paragraph>{text}</S.Paragraph>
+            <S.Paragraph>{inputTime}</S.Paragraph>
           </S.Box>
         </S.List>
     </>

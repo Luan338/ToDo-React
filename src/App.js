@@ -8,7 +8,7 @@ function App() {
 
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState([]);
-
+  const [inputTime, setInputTime] = useState("");
 
   return (
     <section className='wrapper'>
@@ -19,7 +19,10 @@ function App() {
       input={input} 
       todos={todos} 
       setTodos={setTodos} 
-      setInput={setInput} />
+      setInput={setInput} 
+      setInputTime={setInputTime}
+      inputTime={inputTime}
+      />
       <TodoList setTodos={setTodos} todos={todos} />
     </section>
   );

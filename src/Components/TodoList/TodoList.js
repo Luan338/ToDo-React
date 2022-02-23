@@ -13,6 +13,7 @@ const TodoList = ({todos, setTodos}) => {
              setTodos={setTodos}
              todos={todos}
              todo={todo}
+             inputTime={todo.dataTime}
              />
           ))}
         </ul>

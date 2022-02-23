@@ -21,6 +21,7 @@ export const Input = styled.input`
     margin-right: 1rem;
     @media(max-width: 340px){
         margin-right: 0rem;
+        margin-top: 30px;
     }
     @media(max-width: 273px){
         width: 100%;

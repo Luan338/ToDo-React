@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 
 export const List = styled.li`  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;    
     margin: 4rem;
     list-style: none;
@@ -35,9 +38,12 @@ export const Img = styled.img`
 export const Box = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     justify-content: space-around;
+    text-align: center;
     width: 100%;
-    height: 12rem;
+    height: 14rem;
 `
 export const Paragraph = styled.p`
     margin: 0 auto;
